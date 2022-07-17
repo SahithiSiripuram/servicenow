@@ -8,13 +8,14 @@ function QRGenerate() {
 	function generate(){
 		value = document.getElementById("rollNo").value;
 		setFormatedValue(value.toLowerCase().replaceAll(/\s/g,''));
+		// setFormatedValue(value.toUpperCase().replaceAll(/\s/g,''));
 	}
 
 	return (
 		<div className="App">
 			<center>
 				<h2>Servicenow Student Day</h2>
-				<label htmlFor="rollNo">Enter your Roll No</label>
+				<label htmlFor="rollNo">Enter your full Roll No (Example:  18H51A0584)</label>
 				<br />
 				<br />
 				<input
