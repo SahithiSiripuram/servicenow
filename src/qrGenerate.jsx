@@ -29,7 +29,7 @@ function QRGenerate() {
 				<br />
 				{formatedValue && (
 				<QRCode
-					value={"https://servicenowstudentday.herokuapp.com/scan/"+formatedValue}
+					value={"https://servicenowstudentday.herokuapp.com/scan/:"+formatedValue}
 					bgColor={'#FFFFFF'}
 					fgColor={'#000000'}
 					size={256}
