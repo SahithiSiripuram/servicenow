@@ -49,7 +49,7 @@ function QRScanner(){
     <div className="App">
       <center>
         <h2>Servicenow Student Day</h2>
-        <h5>Roll Number: {data}</h5>
+        <h4>Roll Number: {data}</h4>
         <button onClick = {() => markAttendance(data)}>Mark Attendance</button>
         <h5>{message}</h5>
       </center>
