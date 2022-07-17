@@ -29,7 +29,7 @@ function QRGenerate() {
 				<br />
 				{formatedValue && (
 				<QRCode
-					value={formatedValue}
+					value={""+formatedValue}
 					bgColor={'#FFFFFF'}
 					fgColor={'#000000'}
 					size={256}
