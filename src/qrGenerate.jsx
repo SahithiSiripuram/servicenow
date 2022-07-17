@@ -1,5 +1,7 @@
 import QRCode from 'react-qr-code';
 import { useState } from 'react';
+import './app.css';
+import logo from './servicenowlogo.png'
 
 function QRGenerate() {
 	let value;
@@ -14,14 +16,15 @@ function QRGenerate() {
 	return (
 		<div className="App">
 			<center>
-				<h2>Servicenow Student Day</h2>
+				<img src={logo} alt="servicenow logo"/>
+				<h1>Servicenow Student Day</h1>
 				<label htmlFor="rollNo">Enter your full Roll No (Example:  18H51A0584)</label>
 				<br />
 				<br />
 				<input
 				id="rollNo"
 				type="text"
-				placeholder="Value of Qr-code"
+				placeholder="Roll Number"
 				/>
 				<br/>
 				<br/>

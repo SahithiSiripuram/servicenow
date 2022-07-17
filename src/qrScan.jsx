@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import {getDatabase, ref, set, onValue} from "firebase/database";
+import './app.css';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBTO5B8gmKFpQRjuyDJqxDfe8P2qlJ_tr4",
@@ -48,10 +49,10 @@ function QRScanner(){
   return(
     <div className="App">
       <center>
-        <h2>Servicenow Student Day</h2>
-        <h5>Roll Number: {data}</h5>
+        <h1>Servicenow Student Day</h1>
+        <h3>Roll Number: {data}</h3>
         <button onClick = {() => markAttendance(data)}>Mark Attendance</button>
-        <h4>{message}</h4>
+        <h3>{message}</h3>
       </center>
     </div>
   )
