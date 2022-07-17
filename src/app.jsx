@@ -8,7 +8,7 @@ function App() {
 			<div className='App'>
                 <BrowserRouter>
                     <Routes>
-                        <Route path='/scan/:data' element={<QRScanner/>} />
+                        <Route path='/scan/data' element={<QRScanner/>} />
                         <Route path='/' element={<QRGenerate/>} />
                     </Routes>
                 </BrowserRouter>
